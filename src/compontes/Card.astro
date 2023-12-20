@@ -1,0 +1,20 @@
+---
+const header = Astro.props.header;
+const text = Astro.props.text;
+const evolution = Astro.props.evolution;
+---
+
+<main>
+<article>
+    <h2>{header}</h2>
+    <slot />
+    <p> {text}</p>
+    <button>{evolution}</button>
+     <h3>Attack and defense</h3>
+    
+</article>
+</main>
+
+<style>
+
+</style>

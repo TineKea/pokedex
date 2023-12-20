@@ -1,0 +1,32 @@
+---
+import Card from"../compontes/Card.astro";
+import Navbar from "../compontes/Navbar.astro"; 
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro</title>
+	</head>
+	<body>
+		<Navbar /> 
+		<h1>Pokedex</h1>
+		<main>
+		<Card
+			header="Charmander" text="I am a fire type" evolution="Next evolution:  Charmeleon">
+			<img src="/public/img/004.png" alt="Charmander">
+		</Card>
+
+		<Card header="Balbasur" text="I am a green type" evolution="Next evolution: Ivysaur">
+			<img src="/public/img/001.png" alt="Charmander">
+		</Card>
+
+		<Card header="Squirtle" text="I am a water type" evolution="Next evolution: Wartortle">
+			<img src="/public/img/007.png" alt="Charmander"> 
+		</Card>
+		</main>
+	</body>
+</html>
